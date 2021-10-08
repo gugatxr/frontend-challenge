@@ -1,3 +1,17 @@
+# How to run
+
+Use this command to start dev server and open `http://localhost:3000`
+
+```
+yarn start
+```
+
+For building use this:
+
+```
+yarn build
+```
+
 # Frontend Challenge
 
 Clone this repository and start our challenge **right now**
