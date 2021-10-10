@@ -1,10 +1,10 @@
 import { Container, Title, Author, CoverContainer, CoverImg } from "./styles";
 
-export default function BookItem({ title, author, coverImage }) {
+export default function BookItem({ link, title, author, coverImage }) {
   author = author.length > 0 ? author[0] : null;
 
   return (
-    <Container>
+    <Container to={link}>
       <CoverContainer>
         {coverImage && <CoverImg src={coverImage} />}
       </CoverContainer>

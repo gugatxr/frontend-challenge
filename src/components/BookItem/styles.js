@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const Container = styled.a`
+const Container = styled(Link)`
   margin-bottom: 30px;
   width: 30%;
 `;

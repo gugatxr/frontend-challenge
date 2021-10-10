@@ -10,6 +10,10 @@ export default function Search({ search }) {
       {books.map((book) => (
         <BookItem
           key={book.id}
+          link={{
+            pathname: `/details/${book.id}`,
+            state: book,
+          }}
           title={book.volumeInfo.title}
           author={book.volumeInfo.authors ?? ""}
           coverImage={book.volumeInfo?.imageLinks?.smallThumbnail}
