@@ -36,10 +36,4 @@ const CoverImg = styled.img`
   filter: drop-shadow(0px 2px 4px rgba(229, 229, 229, 0.5));
 `;
 
-export {
-  Container,
-  Title,
-  Author,
-  CoverContainer,
-  CoverImg,
-}
+export { Container, Title, Author, CoverContainer, CoverImg };

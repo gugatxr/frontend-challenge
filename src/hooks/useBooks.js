@@ -1,9 +1,9 @@
-import {useEffect, useCallback, useState} from 'react';
-import api from 'services/api';
+import { useEffect, useCallback, useState } from "react";
+import api from "services/api";
 
 const DEFAULT_PAGINATION_SIZE = 10;
 
-export default function useBooks(search){
+export default function useBooks(search) {
   const [books, setBooks] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setError] = useState(true);
@@ -19,14 +19,14 @@ export default function useBooks(search){
 
   const fetchData = useCallback(async (searchTerm) => {
     setIsLoading(true);
-    try{
+    try {
       const response = await api.get(`volumes?q=${searchTerm}&printType=books`);
 
       setBooks(response.data.items);
       setError(false);
       setTotalItens(response.data.totalItems);
     } catch (error) {
-      console.error(error)
+      console.error(error);
       setError(true);
     } finally {
       setIsLoading(false);
@@ -37,6 +37,5 @@ export default function useBooks(search){
     books,
     isLoading,
     isError,
-  }
-
+  };
 }

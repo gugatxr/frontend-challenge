@@ -5,6 +5,6 @@ const BookList = styled.section`
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 42px;
-`
+`;
 
 export default BookList;
