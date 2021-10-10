@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Home from "./Home";
 import Search from "./Search";
 import SearchInput from "components/form/SearchInput";
+import TabBar from "containers/TabBar";
 
 const Container = styled.div`
   background-color: rgb(255, 251, 248);
@@ -11,7 +12,7 @@ const Container = styled.div`
   margin-right: auto;
   padding: 0 20px;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 `;
 
 export default function HomeScreen() {
@@ -25,6 +26,7 @@ export default function HomeScreen() {
         placeholder="Search book"
       />
       {!search ? <Home /> : <Search search={search} />}
+      <TabBar />
     </Container>
   );
 }

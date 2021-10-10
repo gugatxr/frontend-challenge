@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Container = styled(Link)`
   margin-bottom: 30px;
+  text-decoration: none;
   width: 30%;
 `;
 
