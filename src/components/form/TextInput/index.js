@@ -5,6 +5,7 @@ const TextInput = styled.input`
   border: none;
   border-radius: 10px;
   box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.122623);
+  font-family: SFProDisplay;
   font-size: 16px;
   outline: none;
   padding: 15px;
