@@ -1,6 +1,8 @@
+import {useState} from 'react';
 import styled from "styled-components";
+import Home from './Home';
+import Search from './Search';
 import SearchInput from "components/form/SearchInput";
-import WelcomeMessage from "components/WelcomeMessage";
 
 const Container = styled.div`
   background-color: rgb(255, 251, 248);
@@ -12,11 +14,16 @@ const Container = styled.div`
 `;
 
 export default function HomeScreen() {
+  const [search, setSearch] = useState('');
+  console.log(Boolean(search), search)
   return (
     <Container>
-      <SearchInput placeholder="Search book" />
-
-      <WelcomeMessage name="Mehmed Al Fatih" />
+      <SearchInput value={search} onChange={event => setSearch(event.target.value)}/>
+      {
+        !search
+          ? <Home />
+          : <Search search={search} />
+      }
     </Container>
   );
 }
