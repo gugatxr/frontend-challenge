@@ -18,7 +18,7 @@ export default function Search({ search }) {
             }}
             title={book.volumeInfo.title}
             author={book.volumeInfo.authors ?? ""}
-            coverImage={book.volumeInfo?.imageLinks?.smallThumbnail}
+            coverImage={book.volumeInfo?.imageLinks?.thumbnail}
           />
         ))}
       </BookList>
