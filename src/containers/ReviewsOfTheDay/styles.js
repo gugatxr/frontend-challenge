@@ -40,3 +40,7 @@ export const Description = styled.p`
   font-family: "Roboto", sans-serif;
   font-size: 10px;
 `;
+
+export const Image = styled.img`
+  max-width: 100%;
+`;

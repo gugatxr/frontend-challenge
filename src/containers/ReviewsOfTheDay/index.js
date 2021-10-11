@@ -8,13 +8,14 @@ import {
   StatsText,
   StatsDivider,
   StatsContainer,
+  Image,
 } from "./styles";
 
 export default function ReviewsOfTheDay() {
   return (
     <Section title="Reviews of The Days" linkText="All Video">
       <Card>
-        <img
+        <Image
           src={dontMakeThinkVideo}
           alt="Video cover about Dont make me think book"
         />

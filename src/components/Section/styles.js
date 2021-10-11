@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-const Container = styled.section``;
+const Container = styled.section`
+  margin-top: 30px;
+`;
 
 const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
 `;
 
 const Title = styled.h1`
