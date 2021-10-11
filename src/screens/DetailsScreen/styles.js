@@ -25,6 +25,7 @@ const Author = styled.p`
 `;
 
 const ContentWrapper = styled.div`
+  padding-bottom: 120px;
   padding-left: 20px;
   padding-right: 20px;
 `;

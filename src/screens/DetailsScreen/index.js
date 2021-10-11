@@ -13,6 +13,10 @@ import { useHistory } from "react-router-dom";
 import Header from "components/DetailsBook/Header";
 import BackButton from "components/DetailsBook/BackButton";
 import Cover from "components/DetailsBook/Cover";
+import * as DetailsBottomBar from "components/DetailsBook/DetailsBottomBar";
+import shareIcon from "assets/shareIcon.svg";
+import openBookIcon from "assets/openBookIcon.svg";
+import headphoneIcon from "assets/headphoneIcon.svg";
 
 export default function DetailsScreen() {
   const { id } = useParams();
@@ -40,6 +44,20 @@ export default function DetailsScreen() {
     [history]
   );
 
+  const onShareClick = async () => {
+    const shareData = {
+      title: book.volumeInfo.subtitle,
+      text: book.volumeInfo.subtitle,
+      url: book.accessInfo.webReaderLink,
+    };
+
+    try {
+      await navigator.share(shareData);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   if (!book) {
     return null;
   }
@@ -62,6 +80,26 @@ export default function DetailsScreen() {
         <Author>{book.volumeInfo.authors[0]}</Author>
         {Description}
       </ContentWrapper>
+
+      <DetailsBottomBar.Container>
+        <DetailsBottomBar.Item
+          name="Read"
+          icon={openBookIcon}
+          href={book.accessInfo.webReaderLink}
+        />
+        <DetailsBottomBar.Divider />
+        <DetailsBottomBar.Item
+          name="Listen"
+          icon={headphoneIcon}
+          href={book.accessInfo.webReaderLink}
+        />
+        <DetailsBottomBar.Divider />
+        <DetailsBottomBar.Item
+          name="Share"
+          icon={shareIcon}
+          onClick={onShareClick}
+        />
+      </DetailsBottomBar.Container>
     </MainContainer>
   );
 }
