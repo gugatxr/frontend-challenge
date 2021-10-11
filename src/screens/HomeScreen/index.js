@@ -63,6 +63,10 @@ export default function HomeScreen() {
     };
   }, [search]);
 
+  const onHomeClick = () => {
+    setSearch("");
+  };
+
   return (
     <Container>
       <SearchInput
@@ -71,7 +75,7 @@ export default function HomeScreen() {
         placeholder="Search book"
       />
       {!search ? <Home /> : <Search search={search} />}
-      <TabBar />
+      <TabBar onHomeClick={onHomeClick} />
     </Container>
   );
 }

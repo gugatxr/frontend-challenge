@@ -19,11 +19,17 @@ const Container = styled.div`
   padding: 10px 55px;
 `;
 
-export default function TabBar() {
+export default function TabBar({ onHomeClick }) {
   return (
     <WrapContainer>
       <Container>
-        <TabBarItem title="Home" icon={<HomeIcon />} link="#" active={true} />
+        <TabBarItem
+          title="Home"
+          onClick={onHomeClick}
+          icon={<HomeIcon />}
+          link="#"
+          active={true}
+        />
         <TabBarItem
           title="Libraries"
           icon={<BookIcon />}
