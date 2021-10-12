@@ -12,9 +12,9 @@ const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  padding: 0 20px;
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding: 0 1.25rem;
+  padding-top: 3.125rem;
+  padding-bottom: 5rem;
 `;
 
 export default function HomeScreen() {

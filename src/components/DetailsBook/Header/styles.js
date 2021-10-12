@@ -2,17 +2,17 @@ import styled from "styled-components";
 
 const HeaderContainer = styled.header`
   background-color: #fff6e5;
-  border-bottom-right-radius: 100px;
-  padding-top: 27px;
+  border-bottom-right-radius: 6.25rem;
+  padding-top: 1.688rem;
   position: relative;
 `;
 
 const BigOvalCover = styled.img`
-  top: -33px;
-  height: 100px;
-  right: -33px;
+  top: -1rem;
+  height: 6.25rem;
+  right: -2.063rem;
   position: absolute;
-  width: 100px;
+  width: 6.25rem;
 `;
 
 export { HeaderContainer, BigOvalCover };

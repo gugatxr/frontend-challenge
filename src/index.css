@@ -2,23 +2,28 @@
 
 html {
   height: 100%;
+  font-size:80%;
+
 }
 
 * {
     box-sizing: border-box;
 }
 
+:root {
+  --main-container-width: 42.375rem;
+}
+
 body {
   background: #fefbf8;
   font-family: SFProDisplay;
-  font-size:100%;
   height: 100%;
   margin: 0;
 }
 
 #root {
   height: 100%;
-  max-width: 23.438rem;
+  max-width: var(--main-container-width);
   margin: auto;
 }
 

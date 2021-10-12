@@ -4,15 +4,15 @@ export const Container = styled.div`
   align-items: center;
   background-color: #eef5db;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
 `;
 
 export const Text = styled.span`
   color: #2a2b26;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 300;
-  line-height: 11.93px;
+  line-height: 0.746rem;
 `;
 
 export const CurrentChapter = styled.span`
@@ -21,5 +21,5 @@ export const CurrentChapter = styled.span`
 `;
 
 export const Icon = styled.img`
-  margin-right: 3px;
+  margin-right: 0.188;
 `;

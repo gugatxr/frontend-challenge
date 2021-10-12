@@ -4,7 +4,7 @@ const LoadMoreButton = styled.button`
   background-color: #ff6978;
   border: 0;
   border-radius: 5px;
-  box-shadow: 5px 5px 80px rgb(212 173 134 / 49%);
+  box-shadow: 0.313rem 0.313rem 80px rgb(212 173 134 / 49%);
   color: #fff;
   display: block;
   font-family: SFProDisplay;

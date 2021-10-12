@@ -9,9 +9,9 @@ const MainContainer = styled.main`
 const Title = styled.h1`
   color: 36383a;
   font-family: SFProDisplay;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 67px;
+  margin-top: 4.188rem;
 `;
 
 const Subtitle = styled.span`
@@ -20,14 +20,14 @@ const Subtitle = styled.span`
 
 const Author = styled.p`
   color: #ff6978;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: SFProDisplay;
 `;
 
 const ContentWrapper = styled.div`
-  padding-bottom: 120px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 7.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 `;
 
 const Description = styled.p`

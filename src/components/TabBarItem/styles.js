@@ -14,8 +14,8 @@ const ItemContainer = styled.a`
 const ItemText = styled.span`
   color: ${(props) => (props.active ? "#313131" : "#BFBEBF")};
   font-family: SFProDisplay;
-  font-size: 10px;
-  margin-top: 10.22px;
+  font-size: 0.625rem;
+  margin-top: 0.639.rem;
 `;
 
 export { ItemContainer, ItemText };

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Container = styled(Link)`
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   text-decoration: none;
   width: 30%;
 `;
@@ -10,23 +10,23 @@ const Container = styled(Link)`
 const Title = styled.p`
   color: rgba(49, 49, 49, 0.8);
   font-family: SFProDisplay;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0.313rem;
 `;
 
 const Author = styled.p`
   color: rgba(49, 49, 49, 0.8);
   font-family: SFProDisplay;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: bold;
   margin: 0;
 `;
 
 const CoverContainer = styled.div`
-  height: 150px;
-  margin-bottom: 10px;
+  height: 9.375rem;
+  margin-bottom: 0.625rem;
   width: 100%;
 `;
 

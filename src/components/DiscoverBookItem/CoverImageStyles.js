@@ -23,13 +23,13 @@ export const PinkRectangle = styled.div`
 `;
 
 export const BlueOutlinedCircle = styled.div`
-  border-radius: 1.1rem;
+  border-radius: 1.125rem;
   border: 0.13rem solid #4550a7;
-  height: 1.1rem;
+  height: 1.125rem;
   left: -40%;
   position: absolute;
   top: 0;
-  width: 1.1rem;
+  width: 1.125rem;
 `;
 
 export const Triangle = styled.img`
@@ -37,5 +37,5 @@ export const Triangle = styled.img`
   left: -10%;
   position: absolute;
   top: -10%;
-  widht: 2.054rem;
+  width: 2.054rem;
 `;

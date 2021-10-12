@@ -14,6 +14,7 @@ export const Container = styled.article`
   overflow: hidden;
   ${(props) => props.active && "padding: 1.25rem;"}
   ${(props) => !props.active && "padding: 1.021rem;"}
+  width: 80%;
 `;
 
 export const Title = styled.h1`
@@ -75,7 +76,7 @@ export const CoverColumn = styled.div``;
 export const BigOvalCover = styled.img`
   bottom: -56%;
   height: 11rem;
-  left: -78%;
+  left: -5.277rem;
   position: absolute;
   transform: rotate(336deg);
   width: 11rem;

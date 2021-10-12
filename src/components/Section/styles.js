@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.section`
-  margin-top: 30px;
+  margin-top: 1.875rem;
   position: relative;
 `;
 
@@ -12,14 +12,14 @@ const HeaderContainer = styled.header`
 
 const Title = styled.h1`
   color: #3f4043;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   margin: 0;
 `;
 
 const Link = styled.a`
   color: #4abdf1;
-  font-size: 14px;
+  font-size: 0.875rem;
   position: relative;
   text-decoration: none;
   z-index: 3;

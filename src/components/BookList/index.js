@@ -4,7 +4,7 @@ const BookList = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 42px;
+  margin-top: 2.625rem;
 `;
 
 export default BookList;

@@ -20,7 +20,7 @@ export const Container = styled(ScrollContainer)`
 export const BigOvalCover = styled.img`
   height: 11rem;
   position: absolute;
-  right: -32%;
+  right: -6.688rem;
   transform: rotate(336deg);
   top: -6%;
   width: 11rem;

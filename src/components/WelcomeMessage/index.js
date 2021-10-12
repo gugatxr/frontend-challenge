@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 const Container = styled.h2`
   color: #54565a;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: normal;
   font-family: SFProDisplay;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 `;
 
 const UserName = styled.span`

@@ -5,9 +5,9 @@ export const Container = styled.div`
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   display: flex;
-  margin-left: -20px;
-  margin-bottom: 45px;
-  margin-top: 30px;
+  margin-left: -1.25rem;
+  margin-bottom: 2.813rem;
+  margin-top: 1.875rem;
   position: relative;
   width: 100%;
 `;
@@ -15,73 +15,75 @@ export const Container = styled.div`
 export const Title = styled.h1`
   color: #2a2b26;
   font-family: "Playfair Display", serif;
-  font-size: 20px;
-  line-height: 27px;
-  letter-spacing: 2px;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  font-size: 1.25rem;
+  line-height: 1.688rem;
+  letter-spacing: 0.125rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.313rem;
 `;
 
 export const ImageContainer = styled.div`
-  left: 20px;
+  left: 1.25rem;
   position: absolute;
-  top: -15px;
+  top: -0.938rem;
 `;
 
 export const CoverImage = styled.img`
   border-radius: 1px;
-  box-shadow: 5px 7px 32px 0px #8caa3a31;
+  box-shadow: 0.313rem 7px 32px 0px #8caa3a31;
+  height: 8.5rem;
+  width: 5.688rem;
 `;
 
 export const Author = styled.div`
   color: #74776d;
   font-family: "Roboto", sans-serif;
-  font-size: 10px;
-  line-height: 11.72px;
+  font-size: 0.625rem;
+  line-height: 0.733rem;
 `;
 
 export const Content = styled.div`
   flex-grow: 1;
-  margin-left: 130px;
+  margin-left: 8.125rem;
   overflow: hidden;
   position: relative;
 `;
 
 export const PinkRectangle = styled.div`
   background: #ff6978;
-  height: 4px;
-  right: -22.8px;
+  height: 0.25rem;
+  right: -1.425rem;
   position: absolute;
   top: 70%;
-  width: 46px;
+  width: 2.875rem;
   transform: rotate(14deg);
 `;
 
 export const TransparentCircle = styled.div`
   background: #d6d1b1;
-  border-radius: 116px;
-  height: 116px;
-  right: -28px;
+  border-radius: 7.25rem;
+  height: 7.25rem;
+  right: -1.75rem;
   position: absolute;
   opacity: 0.09;
   top: 30%;
-  width: 116px;
+  width: 7.25rem;
 `;
 
 export const BlueOutlinedCircle = styled.div`
-  border-radius: 18px;
-  border: 2px solid #4550a7;
-  height: 18px;
+  border-radius: 1.125rem;
+  border: 0.125rem solid #4550a7;
+  height: 1.125rem;
   right: 38%;
   position: absolute;
-  top: -6px;
-  width: 18px;
+  top: -0.375rem;
+  width: 1.125rem;
 `;
 
 export const BigOvalCircle = styled.img`
-  top: -19px;
-  height: 69px;
-  right: -33px;
+  top: -1.188rem;
+  height: 4.313rem;
+  right: -2.063rem;
   position: absolute;
-  width: 69px;
+  width: 4.313rem;
 `;
