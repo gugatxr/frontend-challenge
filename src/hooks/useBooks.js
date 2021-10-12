@@ -1,4 +1,4 @@
-import { useEffect, useCallback, useState, useMemo } from "react";
+import { useEffect, useCallback, useState, useMemo, useRef } from "react";
 import api from "services/api";
 
 const DEFAULT_PAGINATION_SIZE = 20;
@@ -9,6 +9,30 @@ export default function useBooks(search) {
   const [isError, setError] = useState(true);
   const [totalItems, setTotalItems] = useState(0);
   const [page, setPage] = useState(0);
+  const bookIds = useRef([]);
+
+  console.log(books.length);
+  /**
+   * Google api return duplicate books, this function verify duplicates ids and
+   * remove from array;
+   */
+  const removeDuplicatesIds = useCallback(function (bookList, isFirstPage) {
+    return bookList.filter((book) => {
+      if (isFirstPage) {
+        bookIds.current.push(book.id);
+        return true;
+      }
+
+      console.log(bookIds.current.includes(book.id));
+
+      if (bookIds.current.includes(book.id)) {
+        return false;
+      }
+
+      bookIds.current.push(book.id);
+      return true;
+    });
+  }, []);
 
   const hasMore = useMemo(() => {
     return totalItems > DEFAULT_PAGINATION_SIZE * page;
@@ -44,13 +68,9 @@ export default function useBooks(search) {
         `volumes?q=${searchTerm}&printType=books&maxResults=${DEFAULT_PAGINATION_SIZE}&startIndex=${startIndex}`
       );
 
-      setBooks((data) => {
-        if (startIndex === 0) {
-          return response.data.items;
-        }
+      const data = removeDuplicatesIds(response.data.items, startIndex === 0);
 
-        return [...data, ...response.data.items];
-      });
+      setBooks((old) => (startIndex === 0 ? data : [...old, ...data]));
 
       setError(false);
       setTotalItems(response.data.totalItems);

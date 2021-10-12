@@ -6,11 +6,13 @@ Use this command to start dev server and open `http://localhost:3000`
 yarn start
 ```
 
-For building use this:
+## How to build
 
 ```
 yarn build
 ```
+
+After the build all code will be in `build` folder
 
 # Frontend Challenge
 

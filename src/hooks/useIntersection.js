@@ -15,7 +15,6 @@ export default function useIntersection(
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry.isIntersecting);
         setState(entry.isIntersecting);
       },
       { rootMargin, threshold, root: rootElement ?? document }

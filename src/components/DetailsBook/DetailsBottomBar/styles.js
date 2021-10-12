@@ -18,7 +18,7 @@ const WrapContainer = styled.nav`
   bottom: 53px;
   left: 0;
   margin: auto;
-  max-width: 500px;
+  max-width: 23.438rem;
   right: 0;
   position: fixed;
   width: 100%;

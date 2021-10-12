@@ -30,4 +30,9 @@ const ContentWrapper = styled.div`
   padding-right: 20px;
 `;
 
-export { MainContainer, Title, Subtitle, ContentWrapper, Author };
+const Description = styled.p`
+  color: rgba(49, 49, 49, 0.6);
+  font-size: 0.875rem;
+`;
+
+export { MainContainer, Title, Subtitle, ContentWrapper, Author, Description };

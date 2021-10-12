@@ -32,7 +32,7 @@ export default function ReviewsOfTheDay() {
     <Section title="Discover new book" linkText="More">
       <BigOvalCover src={ovalPattern} />
 
-      <Container ref={(element) => setRef(element)}>
+      <Container horizontal={true} innerRef={(element) => setRef(element)}>
         {books.map((book) => (
           <DiscoverBookItem
             key={book.id}

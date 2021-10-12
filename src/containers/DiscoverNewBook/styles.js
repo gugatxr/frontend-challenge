@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import ScrollContainer from "react-indiana-drag-scroll";
 
-export const Container = styled.div`
+export const Container = styled(ScrollContainer)`
   align-items: center;
   display: flex;
   flex-wrap: no-wrap;

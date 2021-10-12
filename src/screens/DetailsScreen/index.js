@@ -7,6 +7,7 @@ import {
   Subtitle,
   ContentWrapper,
   Author,
+  Description,
 } from "./styles";
 import Interweave from "interweave";
 import { useHistory } from "react-router-dom";
@@ -23,12 +24,17 @@ export default function DetailsScreen() {
   const { book } = useBookDetails(id);
   const history = useHistory(book);
 
-  const Description = useMemo(() => {
+  const DescriptionContent = useMemo(() => {
     if (!book) {
       return null;
     }
 
-    return <Interweave content={book.volumeInfo.description} />;
+    return (
+      <Interweave
+        allowList={["p", "br"]}
+        content={book.volumeInfo.description}
+      />
+    );
   }, [book]);
 
   const onBackClick = useCallback(
@@ -78,7 +84,7 @@ export default function DetailsScreen() {
         </Title>
 
         <Author>{book.volumeInfo.authors[0]}</Author>
-        {Description}
+        <Description>{DescriptionContent}</Description>
       </ContentWrapper>
 
       <DetailsBottomBar.Container>
