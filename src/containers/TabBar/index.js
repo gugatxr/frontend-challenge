@@ -8,6 +8,8 @@ const WrapContainer = styled.nav`
   background-color: #fff;
   bottom: 0;
   left: 0;
+  margin: auto;
+  max-width: 500px;
   right: 0;
   position: fixed;
   width: 100%;

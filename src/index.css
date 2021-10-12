@@ -4,14 +4,22 @@ html {
   height: 100%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
+  background: #fefbf8;
   font-family: SFProDisplay;
+  font-size:100%;
   height: 100%;
   margin: 0;
 }
 
 #root {
   height: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 
 @font-face {

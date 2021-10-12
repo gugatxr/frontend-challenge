@@ -17,6 +17,8 @@ const WrapContainer = styled.nav`
   animation-name: ${slideInAnimation};
   bottom: 53px;
   left: 0;
+  margin: auto;
+  max-width: 500px;
   right: 0;
   position: fixed;
   width: 100%;
