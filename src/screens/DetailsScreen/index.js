@@ -1,5 +1,6 @@
-import { useMemo, useCallback } from "react";
+import { useMemo, useCallback, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import updateTitle from "utils/updateTitle";
 import useBookDetails from "hooks/useBookDetails";
 import {
   MainContainer,
@@ -23,6 +24,10 @@ export default function DetailsScreen() {
   const { id } = useParams();
   const { book } = useBookDetails(id);
   const history = useHistory(book);
+
+  useEffect(() => {
+    updateTitle(book && `Book: ${book.volumeInfo.title} `);
+  }, [book]);
 
   const DescriptionContent = useMemo(() => {
     if (!book) {

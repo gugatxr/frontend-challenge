@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import updateTitle from "utils/updateTitle";
 import styled from "styled-components";
 import Home from "./Home";
 import Search from "./Search";
@@ -33,6 +34,10 @@ export default function HomeScreen() {
 
     setSearch(searchQuery);
   }, []);
+
+  useEffect(() => {
+    updateTitle(search ? `Search: ${search} ` : "");
+  }, [search]);
 
   useEffect(() => {
     if (!search) {
