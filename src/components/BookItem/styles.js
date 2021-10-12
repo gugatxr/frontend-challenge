@@ -25,9 +25,13 @@ const Author = styled.p`
 `;
 
 const CoverContainer = styled.div`
-  height: 9.375rem;
+  height: 9.25rem;
   margin-bottom: 0.625rem;
   width: 100%;
+
+  @media screen and (min-width: 28.125rem) {
+    height: 16.375rem;
+  }
 `;
 
 const CoverImg = styled.img`
